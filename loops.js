@@ -1,5 +1,6 @@
-const nomeUser = "gabriel"
+const nomeUser = "rafael"
 let contador = 0
+ let nomeExiste = false
 const listaNomes = new Array(
    "gabriel",
   "Zoe",
@@ -12,13 +13,15 @@ const listaNomes = new Array(
  
 )
 
+
 while(contador < 8){
   if(nomeUser == listaNomes[contador]){
     console.log("seu nome está aqui "+nomeUser)
-  }else{
-    console.log("Se nome nao está aqui ")
+    nomeExiste = true
+    break;
   }
 
 contador += 1
-
 }
+
+console.log("seu nome é ",nomeExiste)
